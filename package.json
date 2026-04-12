@@ -1,0 +1,38 @@
+{
+  "name": "@protectyr-labs/webhook-resume",
+  "version": "0.1.0",
+  "description": "Webhook-based pause/resume for async workflows. Human-in-the-loop approval gates with timeout and multi-option routing.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "webhook",
+    "async",
+    "workflow",
+    "pause",
+    "resume",
+    "human-in-the-loop",
+    "approval",
+    "callback"
+  ],
+  "author": "Protectyr Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/protectyr-labs/webhook-resume.git"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}
