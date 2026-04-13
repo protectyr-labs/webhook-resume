@@ -41,6 +41,16 @@ const result = await resume(store, wait.waitId, 'approve');
 - **Idempotent resume** -- double-clicks don't create duplicate actions
 - **Zero runtime dependencies** -- pure TypeScript, no framework lock-in
 
+## Use Cases
+
+**Content approval workflows** -- AI drafts a blog post. Send it to the editor via Slack/Telegram with Approve/Reject/Edit buttons. Workflow pauses until they decide.
+
+**Deployment gates** -- CI pipeline reaches the production deploy step. Sends a notification to the team lead. Workflow waits for approval before proceeding.
+
+**Expense approval** -- Employee submits an expense. Manager gets an email with Approve/Deny links. Click resolves the workflow.
+
+**Multi-reviewer chains** -- Document needs sign-off from legal, then compliance, then management. Create sequential wait points for each reviewer.
+
 ## API
 
 | Function | Purpose |
